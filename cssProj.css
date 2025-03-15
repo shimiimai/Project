@@ -1,0 +1,324 @@
+:root {
+    --primary: #ffb7c5;
+    --bgDark: rgb(12, 12, 12);
+    --white: rgb(250, 250, 250);
+    --secondary: rgb(0, 59, 50);
+    --bgLight: rgb(190, 181, 181);
+  }
+  
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+  }
+  header {
+    background-color: var(--bgDark);
+    position: sticky; 
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 73% 94%, 0 100%);
+    padding: 2rem 0; /* Padding for spacing */
+}
+
+/* Centered navigation links */
+header nav {
+    display: flex;
+    justify-content: center; /* Center the nav items horizontally */
+    align-items: center; /* Center the items vertically */
+    width: 100%; /* Ensures nav takes full width */
+}
+
+header nav .center {
+    display: flex; /* Use flex to align items horizontally */
+    justify-content: center; /* Center the links inside this div */
+    gap: 10rem; /* Adds space between the links */
+}
+
+header nav .center a {
+    color: var(--white); /* White color for links */
+    text-decoration: none; /* Remove underline */
+    text-transform: uppercase; /* Uppercase text */
+    transition: all 0.2s ease; /* Smooth transition for hover effect */
+}
+
+header nav .center a:hover {
+    color: var(--primary); /* Color change on hover */
+}
+ 
+  
+  body {
+    font-family: "Poppins", sans-serif;
+  }
+  .container {
+    max-width: 1152px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+  .hero {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+  }
+  .hero .left img {
+    width: 90%;
+    height: auto;
+    margin: 30px;
+  }
+  .hero .right {
+    color: var(--white);
+    margin-top: -7rem;
+  }
+  .hero .right h6 {
+    font-size: 1.6rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+  }
+  .hero .right h1 {
+    font-size: 4rem;
+    font-weight: 100;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+  }
+  .hero .right h1 span {
+    color: var(--primary);
+  }
+  .hero .right p {
+    line-height: 1.9;
+    margin-bottom: 2rem;
+  }
+  
+  section {
+    padding: 6rem;
+  }
+  section.about h1 {
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+  section.about h1 span {
+    color: var(--primary);
+  }
+  section.about h3 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
+  section.about p {
+    font-family: "Lato", sans-serif;
+    color: var(--secondary);
+    line-height: 1.9rem;
+    margin-bottom: 2rem;
+  }
+  section.hobbies {
+    background: rgb(17, 17, 17);
+  }
+  .hobbies-head {
+    color: rgb(10, 9, 9);
+    text-align: center;
+    margin-bottom: 1rem;
+    line-height: 0.5rem;
+    color: var(--primary);
+  }
+  .hobbies-head + p {
+    color: var(--white);
+    font-family: "Lato", sans-serif;
+    margin-bottom: 1rem;
+    text-align: center;
+    margin-bottom: 6rem;
+    font-weight: 400;
+  }
+  .card img {
+    width: 50px;           /* Width of the image */
+    height: 50px;          /* Height of the image */
+    background: white;   /* Background color (this will be used if the image has transparent areas) */
+    border-radius: 50%;    /* Makes the image circular */
+    object-fit: cover; 
+  }
+  section.hobbies .card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+  }
+  section.hobbies .card-grid .card {
+    background: var(--white);
+    padding: 3rem 2rem;
+    position: relative;
+    text-align: center;
+    transition: all 0.2s ease;
+  }
+  section.hobbies .card-grid .card img {
+    position: absolute;
+    top: -1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var();
+  }
+  section.hobbies .card-grid .card h2 {
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  section.hobbies .card-grid .card p {
+    font-family: "Lato", sans-serif;
+    color: var(--seconday);
+    line-height: 1.6;
+  }
+  section.hobbies .card-grid .card:hover {
+    background: var(--primary);
+  }
+  section.hobbies .card-grid .card:hover h2 {
+    color: var(--white);
+  }
+  section.hobbies .card-grid .card:hover p {
+    color: var(--white);
+  }
+  
+  .flex {
+    display: flex;
+  }
+  .items-centre {
+    align-items: center;
+  }
+  .justify-between {
+    justify-content: space-between;
+  }
+  .justify-center {
+    justify-content: center;
+  }
+  .justify-right {
+    justify-content: right;
+  }
+
+  .flex-1 {
+    flex: 1;
+  }
+  /* General footer styling */
+/* Container and Section Styles */
+#socials {
+    background-color: #f7f7f7; /* Light background */
+    padding: 50px 0; /* Padding for top and bottom */
+    text-align: center;
+  }
+  
+  #socials .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .socials-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333; /* Dark text */
+  }
+  
+  .socials-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Space between buttons */
+    flex-wrap: wrap; /* Ensures they wrap on smaller screens */
+  }
+  
+  /* Social Media Icon Styles */
+  .social-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background-color: #333;
+    color: white;
+    border-radius: 50%; /* Circular button */
+    font-size: 25px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    text-decoration: none;
+  }
+  
+  .social-icon:hover {
+    background-color: #007bff; /* Change color on hover */
+    transform: scale(1.1); /* Slight zoom effect */
+  }
+  
+  /* Individual Social Icon Customization */
+  .social-icon.facebook {
+    background-color: #3b5998; /* Facebook Blue */
+  }
+  
+  .social-icon.twitter {
+    background-color: #55acee; /* Twitter Blue */
+  }
+  
+  .social-icon.instagram {
+    background-color: #ac2bac; /* Instagram Purple */
+  }
+  
+  .social-icon.linkedin {
+    background-color: #0082ca; /* LinkedIn Blue */
+  }
+  
+  .social-icon.google {
+    background-color: #dd4b39; /* Google Red */
+  }
+  
+  .social-icon.github {
+    background-color: #333333; /* Github Dark */
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .socials-icons {
+      gap: 10px;
+    }
+  
+    .social-icon {
+      width: 50px;
+      height: 50px;
+      font-size: 20px;
+    }
+  }
+
+ /* Basic styling */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.card {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  position: relative;
+}
+
+.card img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 1rem;
+}
+
+/* Tooltip styling (bubble) */
+.tooltip {
+  display: none;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 14px;
+  max-width: 200px;
+  word-wrap: break-word;
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card:hover .tooltip {
+  display: block;
+}
+
+/* Optional: styling for fun fact popup */
+.card:hover .tooltip {
+  display: block;
+  opacity: 1;
+}

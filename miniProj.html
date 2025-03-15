@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="cssProj.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&family=Poppins:wght@200&display=swap" rel="stylesheet" />
+    <title>Personal Portfolio</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="center">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#hobbies">Hobbies and Interest</a>
+                    <a href="#socials">Socials</a>
+                </div>
+            </nav>
+        </div>
+            </nav>
+        </div>
+        <div class="hero flex items-centre justify-between" id="home">
+            <div class="left flex-1 justify-center">
+                <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExOTZvOTFrYWIxczF1eG13YTQ3bWsyb3hxMzA0cGxyZG8wbm5zNzJ5ZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/Bu342ERrfYxzTjZhZB/giphy.gif" />
+            </div>
+            <div class="right flex-1">
+                <h6></h6>
+                <h1>
+                    Welcome to my <span> Portfolio!</span>
+                </h1>
+                <p>
+                    Nice to meet you virtually! I'm passionate in technology and </br> web development. 
+                    Feel free to explore, and if you'd like to get in touch, </br>don't hesitate to reach out!
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <section class="about" id="about">
+        <div class="container flex items-centre">
+            <div class="left flex-1 justify-right">
+                <img src="https://scontent.fmnl17-1.fna.fbcdn.net/v/t39.30808-6/473368098_23921685037421365_602639847197770848_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeH7GaJQcNNZ0s38XjrEaZ_x6wf9jOycReTrB_2M7JxF5HUqQZQIhqGXKh1e_yUF_oKJ9jjBXNKBHTUze7qIkvxX&_nc_ohc=WgLpedrvWbQQ7kNvgHXRvCg&_nc_oc=AdhQs0G6nvZNhqji4WKQO4MoT0IPS1JmEK4WSwa0Xsdt9d1JUEH-1QUcsLgPoWFKeg4&_nc_zt=23&_nc_ht=scontent.fmnl17-1.fna&_nc_gid=qKk1glb-o9rhyRl5hUzOXg&oh=00_AYHy71sqGkftyGqxTmDt2t4ME0OkUom8xVm1P3UwX2XU2w&oe=67DAF306" height="400px" alt="profile pic" />
+            </div>
+            <div class="right flex-1">
+                <h1>About <span>Me</span></h1>
+                <h3>Hey there!</h3>
+                <p>
+                    I am Sushimita Imai but you may call me Shimi. I'm currently finishing my diploma course in Computer Science in UPOU. </br>
+                    For most of my professional experience, I was part of talent acquisition team but fortunately, I was able to transition last 2024 </br>
+                    as a ServiceNow Developer and enjoying discovering things around the technology. <3
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="hobbies" id="hobbies">
+        <div class="container">
+            <h1 class="hobbies-head">Hobbies and Interests</h1>
+            <p>Click each tile for fun fact!</p> </br>
+            <div class="card-grid">
+                <div class="card" data-funfact="Been playing COD for 6 years now.">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2946/2946159.png" />
+                    <h2>Games</h2>
+                    <p>During my free time, I love playing Call of Duty both in mobile and playstation. Love how interactive the game is!</p>
+                </div>
+                <div class="card" data-funfact="Fave kdrama actor is Park Seo Joon">
+                    <img src="https://static.vecteezy.com/system/resources/previews/020/336/373/non_2x/netflix-logo-netflix-icon-free-free-vector.jpg" />
+                    <h2>Netflix</h2>
+                    <p>Who doesn't love watching movies and kdramas? Netflix is go to when it comes to kDramas and psychological movies. </p>
+                </a>
+                </div>
+                <div class="card" data-funfact="Love Japanese food!">
+                    <img src="https://static.vecteezy.com/system/resources/previews/011/478/680/non_2x/world-food-day-logo-concept-free-vector.jpg" />
+                    <h2>Foodie</h2>
+                    <p>I consider myself a foodie and love to explore new flavors. I'm always up for trying adventurous dishes and experimenting with different cuisines!</p>
+                </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="fun-fact-tooltip" class="tooltip"></div>
+    <section id="socials">
+        <div class="container">
+          <h2 class="socials-heading">Lets's connect!</h2>
+          <div class="socials-icons">
+            <a href="www.facebook.com" class="social-icon facebook" title="Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="www.instagram.com" class="social-icon instagram" title="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/sushimita-riye-imai/" class="social-icon linkedin" title="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="mailto:saimai@up.edu.ph" class="social-icon google" title="saimai@up.edu.ph">
+                <i class="fab fa-google"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+      
+    <script src="jsProj.js"></script>
+</body>
+
+</html>
